@@ -4,12 +4,14 @@ import { HotTableModule } from 'ng2-handsontable/index';
 
 import { GridRoutingModule } from './grid-routing.module';
 import { GridSimpleComponent } from './components/grid-simple/grid-simple.component';
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 
 @NgModule({
   imports: [
     CommonModule,
     GridRoutingModule,
-    HotTableModule
+    HotTableModule,
+    NgxDatatableModule
   ],
   declarations: [ GridSimpleComponent ]
 })

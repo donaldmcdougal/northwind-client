@@ -4,7 +4,7 @@ import {ProductsService} from "../../../../services/northwind.service";
 @Component({
   selector: 'app-grid-simple',
   templateUrl: './grid-simple.component.html',
-  styleUrls: ['./grid-simple.component.css']
+  styleUrls: ['./grid-simple.component.sass']
 })
 export class GridSimpleComponent implements OnInit {
 
@@ -17,10 +17,12 @@ export class GridSimpleComponent implements OnInit {
   }
 
   ngOnInit() {
+    
   }
 
   //data:Array<any> = this.genData(10);
 
+  /*
   private colHeaders:Array<string> = ['Code', 'Name'];
   private columns:Array<any> = [
     {
@@ -69,8 +71,9 @@ export class GridSimpleComponent implements OnInit {
       uncheckedTemplate: 'No'
     }
     */
-  ];
-  private colWidths:Array<number> = [null, null, null, null, null, null, 30];
+  //];
+  //private colWidths:Array<number> = [null, null, null, null, null, null, 30];
+  /*
   private options:any = {
     stretchH: 'all',
     columnSorting: true,
@@ -78,7 +81,9 @@ export class GridSimpleComponent implements OnInit {
       'row_above', 'row_below', 'remove_row'
     ]
   };
+  */
 
+  /*
   private afterChange(e:any) {
     console.log(e);
   }
@@ -86,6 +91,7 @@ export class GridSimpleComponent implements OnInit {
   private afterOnCellMouseDown(e:any) {
     console.log(e);
   }
+  */
 
   private genData(rows) {
     if (rows === void 0) { rows = 10; }
